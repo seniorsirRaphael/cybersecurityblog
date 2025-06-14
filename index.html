@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSec Pro - Cybersecurity Insights & Tools</title>
+    <meta name="description" content="Stay ahead of cyber threats with cutting-edge security insights, tutorials, and tools. Your go-to resource for cybersecurity excellence.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-shield-alt nav-icon"></i>
+                <span class="brand-text">CyberSec Pro</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Articles</a>
+                <a href="#" class="nav-link">Tutorials</a>
+                <a href="#" class="nav-link">Tools</a>
+                <a href="#" class="nav-link">About</a>
+            </div>
+            
+            <div class="nav-search">
+                <div class="search-container">
+                    <input type="text" placeholder="Search articles..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Cybersecurity</span><br>
+                    <span class="white-text">Insights & Tools</span>
+                </h1>
+                <p class="hero-description">
+                    Stay ahead of cyber threats with cutting-edge security insights, tutorials, 
+                    and tools. Your go-to resource for cybersecurity excellence.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        Explore Articles
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline">View Tools</button>
+                </div>
+            </div>
+            
+            <div class="hero-features">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>Security Analysis</h3>
+                    <p>In-depth analysis of latest security vulnerabilities and mitigation strategies.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-code feature-icon"></i>
+                    <h3>Practical Tutorials</h3>
+                    <p>Step-by-step guides for implementing security best practices and tools.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    <h3>Latest Threats</h3>
+                    <p>Real-time updates on emerging cyber threats and attack vectors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore by <span class="accent-text">Category</span></h2>
+                <p>Dive deep into specific cybersecurity domains</p>
+            </div>
+            
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles Section -->
+    <section class="featured-articles">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span class="accent-text">Articles</span></h2>
+                <p>Latest cybersecurity insights and analysis</p>
+            </div>
+            
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Articles will be populated by JavaScript -->
+            </div>
+            
+            <div class="recent-articles">
+                <h3>Recent <span class="accent-text">Posts</span></h3>
+                <div class="recent-grid" id="recentGrid">
+                    <!-- Recent articles will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                
+                <h2>Stay <span class="accent-text">Ahead</span> of Threats</h2>
+                
+                <p>Get the latest cybersecurity insights, threat alerts, and security best practices 
+                delivered to your inbox every week. Join 25,000+ security professionals.</p>
+                
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                    <button type="submit" class="btn btn-primary">
+                        Subscribe
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                
+                <div class="newsletter-features">
+                    <div class="feature-item">
+                        <div class="feature-dot"></div>
+                        <span>Weekly insights</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-dot"></div>
+                        <span>No spam, ever</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-dot"></div>
+                        <span>Unsubscribe anytime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-section">
+                        <div class="nav-brand">
+                            <i class="fas fa-shield-alt nav-icon"></i>
+                            <span class="brand-text">CyberSec Pro</span>
+                        </div>
+                        <p>Your trusted source for cybersecurity insights, tutorials, and tools. 
+                        Helping security professionals stay ahead of emerging threats.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Articles</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Tools</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#">Web Security</a></li>
+                            <li><a href="#">Network Security</a></li>
+                            <li><a href="#">Malware Analysis</a></li>
+                            <li><a href="#">Cryptography</a></li>
+                            <li><a href="#">Mobile Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberSec Pro. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <span class="toast-message">Successfully subscribed!</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
